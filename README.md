@@ -26,7 +26,7 @@ A production-ready **Model Context Protocol (MCP)** server built in TypeScript/N
 
 ### Build from Source
 ```bash
-git clone https://github.com/your-username/stykanimate-mcp.git
+git clone https://github.com/jitendrakumar025/stykanimate-mcp.git
 cd stykanimate-mcp
 npm install
 npm run build
