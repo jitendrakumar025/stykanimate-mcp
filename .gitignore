@@ -1,0 +1,14 @@
+node_modules/
+dist/
+temp_test_output/
+temp_test_output_*/
+temp_media_test/
+temp_stykanimate/
+.tmp_*
+*.tgz
+*.mp4
+*.gif
+*.webm
+player.html
+*.stykanimate
+
