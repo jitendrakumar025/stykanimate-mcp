@@ -3,7 +3,7 @@
     "stykanimate": {
       "command": "node",
       "args": [
-        "C:/CodeStorage/stykanimate-mcp/dist/index.js"
+        "./dist/index.js"
       ]
     }
   }

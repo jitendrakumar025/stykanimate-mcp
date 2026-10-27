@@ -48,6 +48,21 @@ npm link
 
 Add `stykanimate-mcp` to your MCP client configuration (such as Claude Desktop, Claude Code, Cursor, or Antigravity):
 
+### Quick Start (Recommended — via `npx`)
+Works out-of-the-box in any MCP client without manual path setup:
+```json
+{
+  "mcpServers": {
+    "stykanimate": {
+      "command": "npx",
+      "args": ["-y", "stykanimate-mcp"]
+    }
+  }
+}
+```
+
+---
+
 ### Antigravity (Global & Project Plugin)
 
 #### Global Configuration
@@ -56,12 +71,13 @@ Add to `~/.gemini/config/mcp_config.json`:
 {
   "mcpServers": {
     "stykanimate": {
-      "command": "node",
-      "args": ["C:/CodeStorage/stykanimate-mcp/dist/index.js"]
+      "command": "npx",
+      "args": ["-y", "stykanimate-mcp"]
     }
   }
 }
 ```
+*(Or for local development: `"command": "node", "args": ["<path-to-repo>/dist/index.js"]`)*
 
 #### Project Plugin (`.agents/plugins/`)
 Place within `.agents/plugins/stykanimate/`:
@@ -78,19 +94,34 @@ Place within `.agents/plugins/stykanimate/`:
     "mcpServers": {
       "stykanimate": {
         "command": "node",
-        "args": ["C:/CodeStorage/stykanimate-mcp/dist/index.js"]
+        "args": ["./dist/index.js"]
       }
     }
   }
   ```
 
+---
+
 ### Claude Desktop (`claude_desktop_config.json`)
+
+```json
+{
+  "mcpServers": {
+    "stykanimate": {
+      "command": "npx",
+      "args": ["-y", "stykanimate-mcp"]
+    }
+  }
+}
+```
+
+Or for local development from source:
 ```json
 {
   "mcpServers": {
     "stykanimate": {
       "command": "node",
-      "args": ["C:/CodeStorage/stykanimate-mcp/dist/index.js"]
+      "args": ["<path-to-repo>/dist/index.js"]
     }
   }
 }
